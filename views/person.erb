@@ -1,0 +1,14 @@
+<link rel="stylesheet" href="styles.css" type="text/css" />
+
+<table class='table'>
+    <tr>
+        <th>Name</th>
+        <th>Company</th>
+        <th>Hobbies</th>
+    </tr>
+    <tr>
+        <td><%= @person["name"] %></td>
+        <td><%= @person["company"] %></td>
+        <td><%= @person["hobbies"].join(", ") %></td>
+    </tr>
+</table>

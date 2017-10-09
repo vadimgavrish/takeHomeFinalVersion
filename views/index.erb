@@ -1,0 +1,22 @@
+<link rel="stylesheet" href="styles.css" type="text/css" />
+
+<table class='table'>
+    <tr>
+        <th>Name</th>
+        <th>Address</th>
+        <th>Date of Birth</th>
+        <th>Number of Clients</th>
+        <th>Annual Revenue</th>
+    </tr>
+    <% i = 0 %>
+    <% while (i < @people.length) %>
+        <tr class='row' onclick='window.document.location="/<%= @people[i]['id'] %>";'>
+            <td><%= @people[i]['name'] %></td>
+            <td><%= @people[i]['address'] %></td>
+            <td><%= @people[i]['dateOfBirth'] %></td>
+            <td><%= @people[i]['numberOfClients'] %></td>
+            <td>$<%= '%.2f' % @people[i]['annualRevenue'] %></td>
+        </tr>
+    <% i += 1 %>
+    <% end %>
+</table>
