@@ -5,10 +5,12 @@
         <th>Name</th>
         <th>Company</th>
         <th>Hobbies</th>
+        <th>Best Matches</th>
     </tr>
     <tr>
         <td><%= @person["name"] %></td>
         <td><%= @person["company"] %></td>
         <td><%= @person["hobbies"].join(", ") %></td>
+        <td><%= @best_matches.join(", ") %></td>
     </tr>
 </table>

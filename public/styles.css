@@ -1,0 +1,16 @@
+.table {
+    border: 1px solid black;
+    text-align: center;
+    margin: 0 auto;
+    padding: 5px;
+}
+
+.firstRow {
+    color: red;
+    background-color: green;
+}
+
+.row:hover {
+    color: red;
+    cursor: pointer;
+}
